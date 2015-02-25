@@ -50,6 +50,7 @@
         font-weight: 200;
         line-height: 1.4em;
         margin: 0 auto 3em auto;
+        a { color: white; text-decoration: underline; }
 
         @include media($large-screen) {
           font-size: 2em;
