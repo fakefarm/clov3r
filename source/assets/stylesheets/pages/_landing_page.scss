@@ -1,0 +1,33 @@
+.banner {
+  padding-top: 1em;
+  @include media($medium-screen) {
+    padding-top: 2em;
+  }
+  text-align: center;
+  h1 {
+    font-size: 5em;
+    margin: 0;
+  }
+  p {
+    font-size: 1.2em;
+    @include media($medium-screen) {
+      font-size: 1.5em;
+    }
+  }
+}
+.how-it-works, .site-options {
+  @include media($medium-screen) {
+    h1 { font-size: 3em;}
+    h2 {
+      font-size: 2.1em;
+      margin: 0;
+    }
+  }
+}
+
+.site-options li a {
+  @include media($medium-screen) {
+  }
+}
+
+.comment .comment-content h1 { font-size: 1.5em; }
