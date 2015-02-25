@@ -691,18 +691,20 @@ html {
         @media screen and (min-width: 53.75em) {
           /* line 38, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
           .hero .hero-inner .hero-copy h1 {
-            font-size: 4.2em; } }
-      /* line 47, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
+            font-size: 4.2em;
+            padding-top: 1em;
+            margin-bottom: 0em; } }
+      /* line 49, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
       .hero .hero-inner .hero-copy p {
         font-weight: 200;
         line-height: 1.4em;
         margin: 0 auto 3em auto; }
         @media screen and (min-width: 53.75em) {
-          /* line 47, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
+          /* line 49, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
           .hero .hero-inner .hero-copy p {
             font-size: 2em;
             max-width: 80%; } }
-    /* line 59, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
+    /* line 61, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
     .hero .hero-inner button {
       background-color: #477DCA;
       border-radius: 3px;
