@@ -41,6 +41,8 @@
 
         @include media($large-screen) {
           font-size: 4.2em;
+          padding-top: 1em;
+          margin-bottom: 0em;
         }
       }
 
