@@ -699,12 +699,16 @@ html {
         font-weight: 200;
         line-height: 1.4em;
         margin: 0 auto 3em auto; }
+        /* line 53, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
+        .hero .hero-inner .hero-copy p a {
+          color: white;
+          text-decoration: underline; }
         @media screen and (min-width: 53.75em) {
           /* line 49, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
           .hero .hero-inner .hero-copy p {
             font-size: 2em;
             max-width: 80%; } }
-    /* line 61, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
+    /* line 62, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
     .hero .hero-inner button {
       background-color: #477DCA;
       border-radius: 3px;
