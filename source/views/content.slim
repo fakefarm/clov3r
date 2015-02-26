@@ -1,0 +1,43 @@
+---
+layout: application
+title: content
+---
+
+
+/ Photo of yourself on the mountains or something?
+/ List of services you currently provide?
+
+.l-container
+  h1 Content form
+  p Content influences design. Please take a minute to answer some of these questions.
+  form accept-charset="UTF-8" action="https://formkeep.com/f/224987435637" method="POST"
+    input name="utf8" type="hidden" value="✓"
+
+    input name="name" placeholder=("Your Name") type="text"
+    br
+
+    h2
+      label for='control' What Design aspects would you like to be in charge of?
+    p
+      input type="checkbox" name="control" value="Fonts" Fonts
+    p
+      input type="checkbox" name="control" value="Colors" Colors
+    p
+      input type="checkbox" name="control" value="Textures" Textures
+    p
+      input type="checkbox" name="control" value="Nothing" Nothing, let Dave handle it.
+    br
+
+    h2
+      label for='contact_info' What contact information do you want on the site?
+    textarea name="contact_info" placeholder=("Phone: 555-555-5555\nSocial Media accounts: @twitter_handle, Facebook \nAddress: 123 Main\nFax: 123-456-2395 ") type="text" rows=5
+
+    h2
+      label for='copy' Summary / Background information
+    textarea name="content" placeholder=("What kind of information can you give a viewer that will provide some context and trust?") type="text" rows=5
+
+    h2
+      label for='copy' List of Services
+    textarea name="content" placeholder=("What are the things a visitor will benefit from?") type="text" rows=5
+
+    input name="submit" type="submit" value=("This is what I have so far!") class='button'
