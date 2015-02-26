@@ -397,41 +397,42 @@ td,
 th {
   padding: 0; }
 
-/* line 1, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_buttons.scss */
-input[type="button"], input[type="reset"], input[type="submit"],
-button {
+/* line 3, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_buttons.scss */
+input[type="button"] a, input[type="reset"] a, input[type="submit"] a,
+.button a {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
   -webkit-font-smoothing: antialiased;
-  background-color: #477dca;
+  background-color: #63db8e;
   border-radius: 3px;
   border: none;
-  color: #fff;
-  cursor: pointer;
   display: inline-block;
   font-family: "Cambay", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
+  font-size: 2em;
   font-weight: 600;
+  padding: 0.5em 0;
   line-height: 1;
   padding: 0.75em 1em;
   text-decoration: none;
   user-select: none;
   vertical-align: middle;
-  white-space: nowrap; }
-  /* line 21, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_buttons.scss */
-  input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
-  button:hover,
-  button:focus {
-    background-color: #2c5999;
-    color: #fff; }
+  text-align: center;
+  white-space: nowrap;
+  display: block;
+  color: #1f8644; }
+  /* line 23, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_buttons.scss */
+  input[type="button"] a.half, input[type="reset"] a.half, input[type="submit"] a.half,
+  .button a.half {
+    width: 50%; }
   /* line 27, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_buttons.scss */
-  input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
-  button:disabled {
-    cursor: not-allowed;
-    opacity: 0.5; }
+  input[type="button"] a:hover, input[type="button"] a:focus, input[type="reset"] a:hover, input[type="reset"] a:focus, input[type="submit"] a:hover, input[type="submit"] a:focus,
+  .button a:hover,
+  .button a:focus {
+    background-color: #2dc463;
+    color: #fff; }
 
 /* line 1, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_forms.scss */
 fieldset {
@@ -483,8 +484,8 @@ textarea {
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus,
   textarea:focus {
-    border-color: #477dca;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    border-color: #63db8e;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(78, 214, 127, 0.7);
     outline: none; }
 
 /* line 55, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_forms.scss */
@@ -592,12 +593,12 @@ p {
 
 /* line 27, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_typography.scss */
 a {
-  color: #477dca;
+  color: #63db8e;
   text-decoration: none;
   transition: color 0.1s linear; }
   /* line 32, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_typography.scss */
   a:active, a:focus, a:hover {
-    color: #2c5999; }
+    color: #2dc463; }
   /* line 38, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_typography.scss */
   a:active, a:focus {
     outline: none; }
@@ -659,9 +660,9 @@ html {
   padding-bottom: 35em; }
   /* line 21, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
   .hero .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em;
-    margin-top: 4em; }
+    width: 200px;
+    margin-bottom: 0em;
+    margin-top: 1.25em; }
   /* line 27, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_hero_unit.scss */
   .hero .hero-inner {
     max-width: 68em;
@@ -763,17 +764,18 @@ html {
   /* line 19, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
   .bullets p {
     color: #333;
-    line-height: 1.5; }
-  /* line 24, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
+    line-height: 1.5;
+    font-size: 1.1em; }
+  /* line 25, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
   .bullets img {
     max-width: 100%; }
-  /* line 31, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
+  /* line 32, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
   .bullets .bullet-image {
     margin-left: 25.58941%; }
-    /* line 32, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
+    /* line 33, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
     .bullets .bullet-image img {
       width: 70%; }
-  /* line 42, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
+  /* line 43, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
   .bullets .bullet {
     -webkit-flex-basis: 20em;
     -moz-flex-basis: 20em;
@@ -783,7 +785,7 @@ html {
     -moz-flex-grow: 1;
     flex-grow: 1;
     -ms-flex-positive: 1; }
-  /* line 47, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
+  /* line 48, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
   .bullets .bullet-icon {
     background: #477DCA;
     border-radius: 50%;
@@ -791,22 +793,21 @@ html {
     height: 3.5em;
     padding: 0.875em;
     width: 3.5em; }
-  /* line 56, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
+  /* line 57, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
   .bullets .bullet-icon-1 {
     background: #477DCA; }
-  /* line 60, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
+  /* line 61, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
   .bullets .bullet-icon-2 {
     background: #47caaa; }
-  /* line 64, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
+  /* line 65, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
   .bullets .bullet-icon-3 {
     background: #a9ca47; }
-  /* line 68, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
+  /* line 69, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
   .bullets .bullet-content {
     margin-left: 4.9em;
     margin-bottom: 2em; }
-  /* line 73, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
+  /* line 74, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_bullet_points.scss */
   .bullets h2 {
-    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
     display: inline-block;
     font-size: 1.4em;
     margin-bottom: 0.58333em;
@@ -958,7 +959,7 @@ html {
       width: 100%;
       table-layout: fixed; } }
   /* line 29, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
-  .side-image .images-wrapper, .side-image .images-wrapper-2, .side-image .images-wrapper-3 {
+  .side-image .images-wrapper, .side-image .images-wrapper-2, .side-image .images-wrapper-3, .side-image .images-wrapper-dave {
     background: url("../images/abreeze.png"), -webkit-linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
     background: url("../images/abreeze.png"), linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
     background-color: #B5EBEB;
@@ -969,7 +970,7 @@ html {
     padding: 3em; }
     @media screen and (min-width: 53.75em) {
       /* line 29, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
-      .side-image .images-wrapper, .side-image .images-wrapper-2, .side-image .images-wrapper-3 {
+      .side-image .images-wrapper, .side-image .images-wrapper-2, .side-image .images-wrapper-3, .side-image .images-wrapper-dave {
         display: table-cell;
         width: 33.33333%;
         background-position: bottom;
@@ -980,24 +981,31 @@ html {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll; }
   /* line 50, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
+  .side-image .images-wrapper-dave {
+    background: url("../images/dave.png"), -webkit-linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
+    background: url("../images/dave.png"), linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll; }
+  /* line 54, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
   .side-image .images-wrapper-3 {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll; }
-  /* line 53, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
+  /* line 57, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
   .side-image .side-image-content {
     display: table-cell;
     width: 100%;
     padding: 1em 1em 4em 1em; }
     @media screen and (min-width: 53.75em) {
-      /* line 53, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
+      /* line 57, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
       .side-image .side-image-content {
         display: table-cell;
         width: 66.66667%;
         padding: 4em 4em 8em 4em; } }
-    /* line 62, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
-    .side-image .side-image-content h1 {
-      margin-bottom: 0.9em; }
     /* line 66, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
+    .side-image .side-image-content h1 {
+      margin-bottom: 0em; }
+    /* line 69, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
+    .side-image .side-image-content h2 {
+      font-size: 3em; }
+    /* line 73, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
     .side-image .side-image-content h4 {
       background: #BBB;
       color: white;
@@ -1007,11 +1015,11 @@ html {
       margin-bottom: 1.3em;
       padding: 3px 8px;
       text-transform: uppercase; }
-    /* line 77, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
+    /* line 84, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
     .side-image .side-image-content p {
       color: gray;
-      margin-bottom: 3em; }
-    /* line 82, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
+      margin-bottom: 1em; }
+    /* line 89, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
     .side-image .side-image-content button {
       background-color: #477DCA;
       border-radius: 3px;
@@ -1036,6 +1044,201 @@ html {
       .side-image .side-image-content button:disabled {
         opacity: 0.5;
         cursor: not-allowed; }
+
+/* line 5, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+.grid-items-lines {
+  position: relative; }
+  /* line 14, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+  .grid-items-lines p {
+    line-height: 1.5em; }
+  /* line 18, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+  .grid-items-lines a {
+    text-decoration: none; }
+  /* line 9, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  .grid-items-lines::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 34, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+  .grid-items-lines .grid-item {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    cursor: pointer;
+    float: left;
+    height: 14em;
+    overflow: hidden;
+    outline: none;
+    padding: 2em;
+    width: 100%; }
+    @media screen and (min-width: 53.75em) {
+      /* line 34, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+      .grid-items-lines .grid-item {
+        width: 25%; } }
+    /* line 51, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+    .grid-items-lines .grid-item:focus, .grid-items-lines .grid-item:hover {
+      background: rgba(51, 51, 51, 0.05); }
+  /* line 57, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+  .grid-items-lines .grid-item img {
+    display: block;
+    height: 5em;
+    margin-bottom: 0.5em;
+    opacity: 0.5; }
+  /* line 64, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+  .grid-items-lines .grid-item h1 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 0.2em; }
+  /* line 70, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+  .grid-items-lines .grid-item h2 {
+    font-size: 2em;
+    margin-bottom: 0.1em; }
+  /* line 75, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+  .grid-items-lines .grid-item p {
+    color: rgba(51, 51, 51, 0.6); }
+    @media screen and (min-width: 40em) {
+      /* line 75, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+      .grid-items-lines .grid-item p {
+        max-width: 70%; } }
+  @media screen and (min-width: 53.75em) {
+    /* line 83, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+    .grid-items-lines .grid-item-big {
+      width: 66.66667%; } }
+  @media screen and (min-width: 40em) {
+    /* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+    .grid-items-lines .grid-item-big p {
+      max-width: 60%; } }
+  /* line 95, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+  .grid-items-lines .bottom-cover {
+    background: #fff;
+    bottom: 0px;
+    height: 3px;
+    position: absolute;
+    width: 100%; }
+  /* line 103, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_grid_items.scss */
+  .grid-items-lines .right-cover {
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    width: 4px; }
+
+/* line 1, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+.footer {
+  background: url("../images/footer.jpeg"), no-repeat center center fixed;
+  background: url("../images/footer.jpeg"), no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  margin-top: 1em;
+  padding: 3em 1.618em;
+  width: 100%; }
+  /* line 14, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer h1 {
+    color: white;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: center;
+    font-size: 4em; }
+  /* line 21, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer ul {
+    padding: 0; }
+  /* line 25, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer li {
+    list-style: none;
+    line-height: 2em; }
+  /* line 30, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer a {
+    color: #63db8e;
+    font-size: 1em; }
+  @media screen and (min-width: 40em) {
+    /* line 1, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+    .footer {
+      margin-top: 3em; } }
+  /* line 49, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer .footer-logo {
+    margin-bottom: 2em;
+    text-align: center; }
+    /* line 53, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+    .footer .footer-logo img {
+      height: 3em; }
+  /* line 58, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer .footer-links {
+    margin-bottom: 1.5em; }
+    /* line 9, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+    .footer .footer-links::after {
+      clear: both;
+      content: "";
+      display: table; }
+  /* line 67, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer ul {
+    margin-bottom: 3em; }
+    @media screen and (min-width: 40em) {
+      /* line 67, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+      .footer ul {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        /* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+        .footer ul:last-child {
+          margin-right: 0; }
+        /* line 78, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_omega.scss */
+        .footer ul:nth-child(2n) {
+          margin-right: 0; }
+        /* line 83, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_omega.scss */
+        .footer ul:nth-child(2n+1) {
+          clear: left; }
+        /* line 9, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+        .footer ul::after {
+          clear: both;
+          content: "";
+          display: table; } }
+  /* line 77, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer li {
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      /* line 77, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+      .footer li {
+        text-align: left; } }
+  /* line 85, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer li a {
+    color: white;
+    padding: 0.25em;
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid white;
+    border-bottom: 16px solid white;
+    font-size: 1.2em;
+    margin: 1.2em 0;
+    display: block; }
+    /* line 95, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+    .footer li a:focus, .footer li a:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.5); }
+  /* line 102, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer li h3 {
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 0.4em; }
+  /* line 109, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto 1.5em;
+    width: 12em; }
+  /* line 115, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_footer.scss */
+  .footer p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center; }
 
 /* line 1, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_landing_page.scss */
 .banner {
@@ -1069,6 +1272,20 @@ html {
 /* line 33, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_landing_page.scss */
 .comment .comment-content h1 {
   font-size: 1.5em; }
+
+/* line 35, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_landing_page.scss */
+.action-border {
+  color: #4c4c4c;
+  background: #e6e6e6;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px; }
+  @media screen and (min-width: 40em) {
+    /* line 35, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_landing_page.scss */
+    .action-border {
+      padding: 4em;
+      margin: 4em; } }
 
 /*!
 Animate.css - http://daneden.me/animate
