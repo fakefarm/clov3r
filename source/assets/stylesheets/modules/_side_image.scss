@@ -26,7 +26,7 @@
     @include row(table);
   }
 
-  .images-wrapper, .images-wrapper-2, .images-wrapper-3 {
+  .images-wrapper, .images-wrapper-2, .images-wrapper-3, .images-wrapper-dave {
     @include background(url('../images/abreeze.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     background-size: cover;
@@ -47,6 +47,10 @@
     @include background(url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
   }
 
+  .images-wrapper-dave {
+    @include background(url('../images/dave.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+  }
+
   .images-wrapper-3 {
       @include background(url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     }
@@ -60,7 +64,10 @@
     }
 
     h1 {
-      margin-bottom: 0.9em;
+      margin-bottom: 0em;
+    }
+    h2 {
+      font-size: 3em;
     }
 
     h4 {
@@ -76,7 +83,7 @@
 
     p {
       color: gray;
-      margin-bottom: 3em;
+      margin-bottom: 1em;
     }
 
     button {

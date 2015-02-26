@@ -19,6 +19,7 @@
   p {
     color: $base-font-color;
     line-height: $base-line-height;
+    font-size: 1.1em;
   }
 
   img {
@@ -71,7 +72,7 @@
   }
 
   h2 {
-    border-bottom: 1px solid transparentize($base-font-color, 0.8);
+    // border-bottom: 1px solid transparentize($base-font-color, 0.8);
     display: inline-block;
     font-size: $icon-bullet-size / 2.5;
     margin-bottom: $icon-bullet-size / 6;

@@ -31,3 +31,17 @@
 }
 
 .comment .comment-content h1 { font-size: 1.5em; }
+
+.action-border {
+  color: #4c4c4c;
+  background: #e6e6e6;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid $light-gray;
+  border-radius: 4px;
+
+  @include media($medium-screen) {
+    padding: 4em;
+    margin: 4em;
+  }
+}
