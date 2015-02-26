@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -1019,7 +1020,13 @@ html {
     .side-image .side-image-content p {
       color: gray;
       margin-bottom: 1em; }
-    /* line 89, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
+    /* line 88, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
+    .side-image .side-image-content .dave-bio {
+      text-align: left; }
+    /* line 91, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
+    .side-image .side-image-content .signature {
+      text-align: right; }
+    /* line 93, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_side_image.scss */
     .side-image .side-image-content button {
       background-color: #477DCA;
       border-radius: 3px;
@@ -1239,6 +1246,67 @@ html {
     margin: auto;
     max-width: 35em;
     text-align: center; }
+
+/* line 1, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_tool_tip.scss */
+.tooltip-item {
+  margin: 0 .25em;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center; }
+  /* line 10, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_tool_tip.scss */
+  .tooltip-item p {
+    color: #333;
+    line-height: 1.5;
+    margin: 0; }
+  /* line 33, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_tool_tip.scss */
+  .tooltip-item:focus, .tooltip-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible; }
+  /* line 39, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_tool_tip.scss */
+  .tooltip-item .tooltip {
+    position: absolute;
+    right: 0;
+    bottom: 3em;
+    left: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px silver;
+    color: #333;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 0 auto;
+    max-width: 200px;
+    opacity: 0;
+    padding: 0.25em;
+    text-align: center;
+    visibility: hidden;
+    z-index: 10;
+    width: 500px;
+    left: -50px; }
+    /* line 58, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_tool_tip.scss */
+    .tooltip-item .tooltip p {
+      margin-bottom: 0; }
+    /* line 62, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/modules/_tool_tip.scss */
+    .tooltip-item .tooltip:after {
+      position: absolute;
+      right: 0;
+      left: 0;
+      border: 8px solid transparent;
+      bottom: -1.3em;
+      color: white;
+      content: '▼';
+      font-size: 1.4em;
+      margin-left: -8px;
+      text-align: center;
+      text-shadow: 0 2px 2px silver; }
 
 /* line 1, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_landing_page.scss */
 .banner {
