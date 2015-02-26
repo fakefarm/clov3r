@@ -1,0 +1,123 @@
+.footer {
+  @include background(url('../images/footer.jpeg'), no-repeat center center fixed);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-spacing: 1.5em !default;
+  $base-accent-color: #cccccc !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+
+  h1 {
+    color: white;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: center;
+    font-size: 4em;
+  }
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    line-height: 2em;
+  }
+
+  a {
+    color: $action-color;
+    font-size: 1em;
+  }
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $footer-background: desaturate(darken($base-accent-color, 20%), 30%);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+  margin-top: 1em;
+  @include media($medium-screen) {
+    margin-top: 3em;
+  }
+
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+
+  .footer-logo {
+    margin-bottom: 2em;
+    text-align: center;
+
+    img {
+      height: 3em;
+    }
+  }
+
+  .footer-links {
+    @include clearfix;
+    margin-bottom: $base-spacing;
+
+    @include media($medium-screen) {
+      // @include shift();
+    }
+  }
+
+  ul {
+    margin-bottom: $base-spacing * 2;
+
+    @include media($medium-screen) {
+      @include span-columns(6);
+      @include omega(2n);
+      @include clearfix;
+    }
+  }
+
+  li {
+    text-align: center;
+
+    @include media($medium-screen) {
+      text-align: left;
+    }
+  }
+
+  li a {
+    color: white;
+    padding: 0.25em;
+    background: rgba(0,0,0,0.5);
+    border: 3px solid white;
+    border-bottom: 16px solid white;
+    font-size: 1.2em;
+    margin: 1.2em 0;
+    display: block;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+      background: rgba(255,255,255,0.5);
+    }
+  }
+
+  li h3 {
+    color: $footer-color;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 0.4em;
+  }
+
+  hr {
+    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    margin: 0 auto $base-spacing;
+    width: 12em;
+  }
+
+  p {
+    color: $footer-disclaimer-color;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center;
+  }
+}
