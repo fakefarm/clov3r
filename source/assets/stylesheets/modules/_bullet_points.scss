@@ -31,7 +31,9 @@
 
   .bullet-image {
     img { width: 70%; }
-    @include shift(3);
+    @include media($medium-screen) {
+      @include shift(3);
+    }
   }
 
   @include display(flex);
@@ -67,8 +69,10 @@
   }
 
   .bullet-content {
-    margin-left: $icon-bullet-size * 1.4;
-    margin-bottom: 2em;
+    @include media($medium-screen) {
+      margin-left: $icon-bullet-size * 1.4;
+      margin-bottom: 2em;
+    }
   }
 
   h2 {

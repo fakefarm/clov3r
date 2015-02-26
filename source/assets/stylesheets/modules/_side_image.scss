@@ -49,6 +49,10 @@
 
   .images-wrapper-dave {
     @include background(url('../images/dave.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    height: 400px;
+    @include media($medium-screen) {
+      height: 100%;
+    }
   }
 
   .images-wrapper-3 {
@@ -67,7 +71,10 @@
       margin-bottom: 0em;
     }
     h2 {
-      font-size: 3em;
+        font-size: 1.2em;
+     @include media($medium-screen) {
+        font-size: 3em;
+      }
     }
 
     h4 {

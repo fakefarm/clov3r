@@ -16,7 +16,10 @@
     margin-top: 0em;
     margin-bottom: 0em;
     text-align: center;
-    font-size: 4em;
+    font-size: 1.3em;
+    @include media($medium-screen) {
+      font-size: 4em;
+    }
   }
   ul {
     padding: 0;
