@@ -85,6 +85,10 @@
       color: gray;
       margin-bottom: 1em;
     }
+    .dave-bio {
+      text-align: left;
+    }
+    .signature { text-align: right;}
 
     button {
       @include button(flat, $base-accent-color);
