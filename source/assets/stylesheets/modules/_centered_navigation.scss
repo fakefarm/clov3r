@@ -22,9 +22,11 @@
   border-bottom: 1px solid darken($centered-navigation-background, 6%);
   min-height: $centered-navigation-height;
   width: 100%;
-  position: fixed;
-  left: 0;
-  top:0;
+  @include media($medium-screen) {
+    position: fixed;
+    left: 0;
+    top:0;
+  }
   z-index: 9999;
 
   // Mobile view
