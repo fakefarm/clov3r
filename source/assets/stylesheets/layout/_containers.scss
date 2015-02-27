@@ -4,6 +4,7 @@
   @include outer-container;
   padding: 0 0.5em;
   @include media($medium-screen) {
+    margin-top: 5em;
   }
 }
 
