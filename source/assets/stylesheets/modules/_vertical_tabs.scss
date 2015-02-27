@@ -51,6 +51,11 @@
       height: $vertical-tabs-height;
       width: 35%;
     }
+    &.portfolio {
+      @include media($medium-screen) {
+        height: 38.25em;
+      }
+    }
   }
 
   .vertical-tab {
@@ -99,6 +104,13 @@
     @include media($vertical-tab-mode) {
       border: none;
       display: none;
+    }
+
+    .parts {
+      @include row();
+      .kit {
+        @include span-columns(1.5);
+      }
     }
   }
 
