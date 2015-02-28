@@ -11,6 +11,14 @@
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
 
+  .logo {
+    display: inline-block;
+    @include transform(rotate(-90deg));
+    position: relative;
+    top: -0.15em;
+    font-size: 0.9em;
+  }
+
   h1 {
     color: white;
     margin-top: 0em;
@@ -63,7 +71,7 @@
     margin-bottom: $base-spacing;
 
     @include media($medium-screen) {
-      // @include shift();
+      @include shift(3);
     }
   }
 
@@ -71,7 +79,7 @@
     margin-bottom: $base-spacing * 2;
 
     @include media($medium-screen) {
-      @include span-columns(6);
+      @include span-columns(4);
       @include omega(2n);
       @include clearfix;
     }
@@ -87,10 +95,9 @@
 
   li a {
     color: white;
-    padding: 0.25em;
-    background: rgba(0,0,0,0.5);
-    border: 3px solid white;
-    border-bottom: 16px solid white;
+    padding: 0.5em;
+    padding-left: 4em;
+    background: rgba(0,0,0,0.7);
     font-size: 1.2em;
     margin: 1.2em 0;
     display: block;
