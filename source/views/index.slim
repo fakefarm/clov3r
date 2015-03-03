@@ -212,10 +212,66 @@ header.centered-navigation role="banner"
       = image_tag 'splash.png'
       h1 Splash Page
       h2 $200
+      <div class="modal">
+        <label for="modal-1">
+          <div class="modal-trigger">click for detils</div>
+        </label>
+        <input class="modal-state" id="modal-1" type="checkbox" />
+        <div class="modal-window">
+          <div class="modal-inner">
+            <label class="modal-close" for="modal-1"></label>
+            h1 Splash Page
+            h2 $200
+            p.modal-intro A single page site that comes with the following.
+            h2 Contents
+            ul.bullets
+              li.bullet.three-col-bullet
+                .bullet-icon.bullet-icon-1
+                  img alt=""
+                .bullet-content
+                  h2 Made for you
+                  p Splash pages are a great way to begin telling your story. They are simple, clean and hold as much information as you have.
+              li.bullet.three-col-bullet
+                .bullet-icon.bullet-icon-2
+                  img alt=""
+                .bullet-content
+                  h2 Managed by Dave
+                  p Dave will handle all the coding and page design so you can focus on content creation.
+              li.bullet.three-col-bullet
+                .bullet-icon.bullet-icon-3
+                  img alt=""
+                .bullet-content
+                  h2 Grow when you want it to.
+                  p Splash page code is clean and ready to grow when you need another page like a contact form, blog, or product buy button.
+
+            h2 More info
+            p.modal-content Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.
+            h3 Turn around time
+            p these sites usually take 2 - 4 days to post once you provide me content.
+            h3 Terms & Conditions
+
+          </div>
+        </div>
+      </div>
+
     a.grid-item href="javascript:void(0)"
       = image_tag 'page.png'
-      h1 + Pages (Requires Splash Page)
+      h1 + Pages
       h2 $100 per page
+      <div class="modal">
+        <label for="modal-2">
+          <div class="modal-trigger">click for detils</div>
+        </label>
+        <input class="modal-state" id="modal-2" type="checkbox" />
+        <div class="modal-window">
+          <div class="modal-inner">
+            <label class="modal-close" for="modal-2"></label>
+            <h1>Extra Pages</h1>
+            <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+            <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+          </div>
+        </div>
+      </div>
     a.grid-item href="javascript:void(0)"
       = image_tag 'blog.png'
       h1 Basic blog
