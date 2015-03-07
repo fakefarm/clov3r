@@ -49,7 +49,31 @@ $(".js-vertical-tab-accordion-heading").click(function(event) {
   $(".js-vertical-tab").removeClass("is-active");
   $(".js-vertical-tab[rel^='"+accordion_activeTab+"']").addClass("is-active");
 });
-(function() {
+$(function() {
+  $("#modal-1").on("change", function() {
+    if ($(this).is(":checked")) {
+      $("body").addClass("modal-open");
+    } else {
+      $("body").removeClass("modal-open");
+    }
+  });
+
+  $("#modal-2").on("change", function() {
+    if ($(this).is(":checked")) {
+      $("body").addClass("modal-open");
+    } else {
+      $("body").removeClass("modal-open");
+    }
+  });
+
+  $(".modal-window").on("click", function() {
+    $(".modal-state:checked").prop("checked", false).change();
+  });
+
+  $(".modal-inner").on("click", function(e) {
+    e.stopPropagation();
+  });
+});
 
 
-}).call(this);
+
