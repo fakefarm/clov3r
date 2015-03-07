@@ -12,6 +12,8 @@ header.centered-navigation role="banner"
         li.nav-link
           a href="#why-clov3r"  Why clov3r
         li.nav-link
+          a href="#examples" Examples
+        li.nav-link
           a href="#menu"  Menu
         li.nav-link
           a href="#dave"  Meet Dave
@@ -20,6 +22,8 @@ header.centered-navigation role="banner"
         /     img alt=("Logo image") src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" /
         li.nav-link
           a href="#price-list"  Price List
+        li.nav-link
+          a href="#faqs"  FAQs
         / li.nav-link.more
         /   a href="javascript:void(0)"  Dear, Dave
         /   ul.submenu
@@ -59,7 +63,7 @@ header.centered-navigation role="banner"
 #why-clov3r
 .why-clov3r.l-container
   .banner.l-banner
-    h1 Websites for small businesses, busy moms, and new ideas
+    h1 Websites for Small Businesses, Busy Moms, and New Ideas
     p There are many different ways to create a website. The clov3r way is to let you focus on what you do best and leave the rest to <a href="#dave">Dave</a>.
   ul.bullets
     li.bullet.three-col-bullet
@@ -75,79 +79,65 @@ header.centered-navigation role="banner"
     li.bullet.three-col-bullet
       .bullet-image= image_tag 'mobile.jpg'
       .bullet-content
-        h2 Mobile Friendly
-        p clov3r sites look great on all tablets, laptops, and mobile devices.
+        h2 Works Across Screens
+        p clov3r sites are designed and tested to look great on all tablets, laptops, and mobile devices.
 
 #examples
 .l-container
   .banner.l-banner
     h1 Examples
     p Sharing the <3
-    h1 this part is not done
   .vertical-tabs-container
     .vertical-tabs.portfolio
-      a.js-vertical-tab.vertical-tab.is-active href="javascript:void(0)" rel="tab1"  Abreeze Accounting (Small business)
-      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab2"  Add Good (Idea)
-      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab3"  Liz Turpin (Mom Blog)
-      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab4"  Cat Math Do (Boardgame)
-      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab5"  Feather (Small business)
+      a.js-vertical-tab.vertical-tab.is-active href="javascript:void(0)" rel="taba"  Abreeze Accounting (Small business)
+      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tabb"  Add Good (Idea)
+      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tabc"  Peterson Masonry (Small Business)
+      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tabd"  Cat Math Do (Boardgame)
+      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tabe"  Feather (Small business)
+      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tabf"  Your Site
     .vertical-tab-content-container
-      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading.is-active href="" rel="tab1"  "What's the next step?"
-      #tab1.js-vertical-tab-content.vertical-tab-content
-        h2 Small business
+      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading.is-active href="" rel="taba"  "What's the next step?"
+      #taba.js-vertical-tab-content.vertical-tab-content
+        h2 Abreeze Accounting
         = image_tag 'abreeze.png'
-        / .parts
-        /   .kit
-        /     h1 Kits used
-        /   .kit=image_tag 'splash.png'
-        /   .kit=image_tag 'flair.png'
-        / .total-price
-        /   h1 $450
-        p The next step is to shoot me an email that you need a website. Then, I'll need the content you're interested in posting. Feel free to provide that here: <a href="/content" class='button'>Site Content</a>
-        .button= link_to 'visit site', ''
-      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tab2"  "Why not use WordPress?"
-      #tab2.js-vertical-tab-content.vertical-tab-content
-        h2 "Y U NO LIKE WORDPRESS??"
-        p  Those are great tools if they meet your needs. But often they are either too small or too big. WordPress is great for larger projects but a little heavy handed for simple splash pages with some static content. clov3r sites are perfect for people who want to do as little as possible on the 'web' side of things.
-      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tab3"  "How Long does this take?"
-      #tab3.js-vertical-tab-content.vertical-tab-content
-        h2 "Where is my site??"
-        p Usually 2 - 3 days and I can have your site up for review.
-      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tab4"  "Why should I use clov3r?"
-      #tab4.js-vertical-tab-content.vertical-tab-content
-        h2 "Because, I'm your brother."
-        p Well, then we'd have something to talk about!
-      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tab5"  "What's in that Spinich shake?"
-      #tab5.js-vertical-tab-content.vertical-tab-content
-        h2 "Gross."
-        p I've been drinking a protein spinach shake for 8 years. I first learned of it from Joe Dillon's 7 Natural laws.
-
-
-/ .examples.l-container
-/   .banner.l-banner
-/     h1 Examples
-/     p See how easy it is for other people.
-/   .side-image
-/     .images-wrapper
-/     .side-image-content
-/       h4 Abreeze Accounting
-/       h1 New Business needed an online presence
-/       p Deb Meyer started Abreeze Accounting because she wanted people to have an easy experience with their books.
-/       .button=link_to 'view', '', class: 'half'
-/   .side-image
-/     .images-wrapper-2
-/     .side-image-content
-/       h4 Peterson Masonry
-/       h1 Showcase work
-/       p Albert Peterson wanted to show off his masonry work.
-/       .button=link_to 'view', '', class: 'half'
-/   .side-image
-/     .images-wrapper-3
-/     .side-image-content
-/       h4 Feather Cards
-/       h1 Send a feather
-/       p A side project of mine.
-/       .button=link_to 'view', '', class: 'half'
+        .content
+          .bio Abreeze Accounting is bookkeeping and accounting services by Deb Meyer. She keeps the books and I keep her website.
+          .button= link_to 'visit site', 'http://www.abreezeaccounting.com', target: '_blank'
+      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tabb"  "Why not use WordPress?"
+      #tabb.js-vertical-tab-content.vertical-tab-content
+        h2 Add+Good
+        = image_tag 'abreeze.png'
+        .content
+          .bio Ben Huntoon has been noodling over an idea than can change the world for the better. He wanted a site to start the conversation.
+          .button= link_to 'visit site', 'http://www.abreezeaccounting.com', target: '_blank'
+      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tabc"  "How Long does this take?"
+      #tabc.js-vertical-tab-content.vertical-tab-content
+        h2 Peterson Masonry
+        = image_tag 'abreeze.png'
+        .content
+          .bio Peterson Masonry offers stone stuff and I do their site stuff.
+          .button= link_to 'visit site', 'http://www.abreezeaccounting.com', target: '_blank'
+      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tabd"  "Why should I use clov3r?"
+      #tabd.js-vertical-tab-content.vertical-tab-content
+        h2 Cat Math Do
+        = image_tag 'abreeze.png'
+        .content
+          .bio A board game that introduces toddlers to plus & minus.
+          .button= link_to 'visit site', 'http://www.abreezeaccounting.com', target: '_blank'
+      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tabe"  "What's in that Spinich shake?"
+      #tabe.js-vertical-tab-content.vertical-tab-content
+        h2 Feather cards
+        = image_tag 'abreeze.png'
+        .content
+          .bio A company that sets out to change how people send gift cards.
+          .button= link_to 'visit site', 'http://www.abreezeaccounting.com', target: '_blank'
+      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tabf"  "What's in that Spinich shake?"
+      #tabf.js-vertical-tab-content.vertical-tab-content
+        h2 You're next!
+        = image_tag 'abreeze.png'
+        .content
+          .bio I'm ready to make your site. The first step is to shoot me an email.
+          .button= link_to "let's start", 'http://www.abreezeaccounting.com', target: '_blank'
 
 #menu
 .site-options.l-container
@@ -206,7 +196,7 @@ header.centered-navigation role="banner"
   .banner.l-banner
     = image_tag 'pizza.png'
     h1 mmm... price list
-    p Your own slice of the Internet made the way you want it. The first task is to set up your Splash Page. Then, we can see if you need anything else. Some people refer to this as <i>Agile</i> but forget I said that.
+    p Your own slice of the Internet made the way you want it. Payment is flat, up front. There are no monthly fees for hosting. Then, we can see if you need anything else. Some people refer to this as <i>Agile</i> but forget I said that.
   .grid-items-lines
     a.grid-item href="javascript:void(0)"
       = image_tag 'splash.png'
@@ -318,35 +308,45 @@ header.centered-navigation role="banner"
 .l-container
   .banner.l-banner
     h1 So Dave, I have a question...
-    p (some of my favorites)
+    p Frequantly Asked Questions
   .vertical-tabs-container
     .vertical-tabs
-      a.js-vertical-tab.vertical-tab.is-active href="javascript:void(0)" rel="tab1"  "What's the next step?"
-      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab2"  "Why not use WordPress?"
+      a.js-vertical-tab.vertical-tab.is-active href="javascript:void(0)" rel="tab4"  "Why should I use clov3r?"
+      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab7"  "How much does it cost?"
+      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab2"  "Why not WordPress?"
+      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab1"  "What's the next step?"
       a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab3"  "How Long does this take?"
-      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab4"  "Why should I use clov3r?"
-      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab5"  "What's in that Spinich shake?"
+      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab5"  "What about revisions?"
+      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tab6"  "What's in that Spinich shake?"
     .vertical-tab-content-container
       a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading.is-active href="" rel="tab1"  "What's the next step?"
       #tab1.js-vertical-tab-content.vertical-tab-content
         h2 What's the next step?
-        p The next step is to shoot me an email that you need a website. Then, I'll need the content you're interested in posting. Feel free to provide that here: <a href="/content" class='button'>Site Content</a>
+        p The next step is to shoot me an email that you need a website. Then, I'll need the content you're interested in posting. Feel free to provide that here: <a href="/content" class='button'>Site Content
+      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading.is-active href="" rel="tab7"  "What's the next step?"
+      #tab7.js-vertical-tab-content.vertical-tab-content
+        h2 How much does it cost?
+        p clov3r sites are iterative. They can ship quickly because they are small and modular. A splash page is $200 and that might be all you need. There are no monthly reocurring fees.
       a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tab2"  "Why not use WordPress?"
       #tab2.js-vertical-tab-content.vertical-tab-content
-        h2 "Y U NO LIKE WORDPRESS??"
-        p  Those are great tools if they meet your needs. But often they are either too small or too big. WordPress is great for larger projects but a little heavy handed for simple splash pages with some static content. clov3r sites are perfect for people who want to do as little as possible on the 'web' side of things.
+        h2 Why not WordPress?
+        p  Sites like WordPress and SquareSpace (AKA "CMS Sites") are great if they meet your needs. But they can also be too big. CMS are great for larger projects that have a lot of activity but a little heavy handed for simple splash pages with some static content.
       a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tab3"  "How Long does this take?"
       #tab3.js-vertical-tab-content.vertical-tab-content
-        h2 "Where is my site??"
-        p Usually 2 - 3 days and I can have your site up for review.
+        h2 How long does this take?
+        p Usually 2 - 3 days after I receive content will I have your site up for review.
       a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tab4"  "Why should I use clov3r?"
       #tab4.js-vertical-tab-content.vertical-tab-content
-        h2 "Because, I'm your brother."
-        p Well, then we'd have something to talk about!
-      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tab5"  "What's in that Spinich shake?"
+        h2 Why clov3r?
+        p clov3r is for people who want to do as little as possible on the 'web' side of things. Think of it as a web design and development agency of one who also goes by 'Dave'
+      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tab6"  "What's in that Spinich shake?"
       #tab5.js-vertical-tab-content.vertical-tab-content
-        h2 "Gross."
-        p I've been drinking a protein spinach shake for 8 years. I first learned of it from Joe Dillon's 7 Natural laws.
+        h2 What about revisions?
+        p Each of the items on the price list describe the kind of revisions that are free vs. paid. The biggest difference is the amount of time it will take to make the revision. If it's something small, I'm happy to do it at no charge. If it's big, I'll either point you to something on the price list or it will give you a proposal that will be based on my hourly rate. Just let me know what you want and I'll let you know.
+      a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading href="" rel="tab6"  "What's in that Spinich shake?"
+      #tab6.js-vertical-tab-content.vertical-tab-content
+        h2 What's in that Spinich shake?
+        p I've been drinking a protein spinach shake for 8 years. I first learned of it from Joe Dillon's 7 Natural laws. I've been asked that enough times now that I'm going to make a short video or blog post showing all the ingredients.
 
 #get-started
 .l-container

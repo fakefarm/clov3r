@@ -15,6 +15,26 @@
     list-style: none;
   }
 
+  .content {
+    @include row();
+    @include media($medium-screen) {
+      margin-top: 1em;
+      padding-top: 1em;
+      border-top: 1px solid $light-gray;
+      .bio { @include span-columns(8);}
+      .button { @include span-columns(4);}
+    }
+  }
+
+  h2 {
+    text-align: center;
+    @include media($medium-screen) {
+      font-size: 3em;
+      margin: 0;
+    }
+  }
+
+
   p {
     color: $base-font-color;
     line-height: $base-line-height;
@@ -91,7 +111,7 @@
     }
 
     @include media($vertical-tab-mode) {
-      @include size(65% $vertical-tabs-height);
+      @include size(65% 25em);
       background-color: $tab-content-background;
       display: inline-block;
     }
