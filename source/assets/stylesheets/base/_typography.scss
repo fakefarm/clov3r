@@ -52,6 +52,9 @@ hr {
 img,
 picture {
   margin: 0;
-  width: 100%;
   max-width: 100%;
+}
+
+.example-image img {
+  width: 100%;
 }
