@@ -616,8 +616,11 @@ hr {
 img,
 picture {
   margin: 0;
-  width: 100%;
   max-width: 100%; }
+
+/* line 58, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/base/_typography.scss */
+.example-image img {
+  width: 100%; }
 
 /* line 4, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
