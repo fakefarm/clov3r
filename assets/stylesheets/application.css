@@ -2031,53 +2031,64 @@ html {
   .pay a:hover {
     background: red; }
 
-/* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
-.product:hover {
-  background: #ddd; }
-@media screen and (min-width: 40em) {
-  /* line 86, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
-  .product {
-    padding: 1em 1em 1em 0; } }
-@media screen and (min-width: 40em) {
-  /* line 91, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
-  .product .icon {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    /* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
-    .product .icon:last-child {
-      margin-right: 0; } }
-/* line 96, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
-.product .content {
-  color: #333; }
+/* line 86, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.product {
+  position: relative; }
+  /* line 88, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  .product:hover {
+    background: #ddd; }
   @media screen and (min-width: 40em) {
-    /* line 96, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
-    .product .content {
+    /* line 86, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+    .product {
+      padding: 1em 1em 1em 0; } }
+  @media screen and (min-width: 40em) {
+    /* line 94, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+    .product .icon {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 65.88078%; }
+      width: 31.76157%; }
       /* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
-      .product .content:last-child {
+      .product .icon:last-child {
         margin-right: 0; } }
+  /* line 99, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  .product .content {
+    color: #333; }
+    @media screen and (min-width: 40em) {
+      /* line 99, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+      .product .content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        /* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+        .product .content:last-child {
+          margin-right: 0; } }
 
 @media screen and (min-width: 40em) {
-  /* line 104, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  /* line 107, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
   .primary, .secondary {
     padding-top: 2em; } }
 
-/* line 110, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+/* line 113, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
 .more-info {
   display: none; }
 
-/* line 114, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+/* line 117, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
 .more-button {
   color: #477dca; }
 
-/* line 118, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+/* line 121, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
 .more-button:hover + .more-info {
-  display: block; }
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 6em;
+  width: 27em;
+  padding: 1em;
+  top: 7em;
+  left: 0;
+  background: #ddd; }
 
 /*!
 Animate.css - http://daneden.me/animate
