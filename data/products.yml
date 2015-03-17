@@ -1,4 +1,18 @@
 -
+  title: 'Product Page'
+  body: 'Sellling something? Product Pages are the way to go.'
+  img: 'abreeze.jpg'
+  tag: 'product'
+  price: '$40'
+  url: 'splash-page'
+-
+  title: 'Feedback form'
+  body: "Need feedback? Custom forms can be anything you need."
+  img: 'abreeze.jpg'
+  tag: 'product'
+  price: '$40'
+  url: 'splash-page'
+-
   title: '+ Page'
   body: 'Need more pages?'
   img: 'abreeze.jpg'
