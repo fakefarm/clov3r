@@ -1,0 +1,108 @@
+.content, .below, .third, .product {  @include row() }
+
+.large {
+  @include media($medium-screen) {
+    @include span-columns(7);
+    padding-right: 1.8em;
+    border-right: 1px solid $light-gray;
+  }
+}
+.small {
+  @include media($medium-screen) {
+    @include span-columns(5);
+  }
+}
+
+h2 {
+  @include media($medium-screen) {
+    font-size: 2em;
+    padding: 0;
+    margin: 0.5em 0 0 0;
+  }
+}
+
+.headline {
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    padding: 0;
+    @include media($medium-screen) {
+      margin: 0 0 -10px 0;
+      font-size: 5em;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 1em;
+    @include media($medium-screen) {
+      font-size: 1.25em;
+    }
+  }
+}
+
+.purchase {
+  background: $light-gray;
+  border: 1px solid $dark-gray;
+  border-radius: 5px;
+  padding: 1em;
+  @include media($medium-screen) {
+    margin-top: 4em;
+    padding: 1em;
+  }
+}
+
+.buy-box {
+  text-align: center;
+}
+
+.price {
+  @include media($medium-screen) {
+    font-size: 3em;
+  }
+}
+
+.pay {
+
+  @include media($medium-screen) {
+    background: $green;
+  }
+
+  a {
+    display: block;
+    color: white;
+    font-size: 1.3em;
+    padding: 1em;
+    background: $green;
+    @include media($medium-screen) {
+      padding: 0.25em 0;
+      font-size: 3em;
+    }
+    &:hover {
+      background: red;
+    }
+  }
+}
+
+.product {
+  &:hover { background: $light-gray }
+  @include media($medium-screen) {
+    padding: 1em 1em 1em 0;
+  }
+  .icon {
+    @include media($medium-screen) {
+      @include span-columns(4);
+    }
+  }
+  .content {
+    color: $dark-gray;
+    @include media($medium-screen) {
+      @include span-columns(8);
+    }
+  }
+}
+
+.primary, .secondary {
+  @include media($medium-screen) {
+    padding-top: 2em;
+  }
+}

@@ -1,0 +1,89 @@
+<% p = data.send(product) %>
+
+<div class="l-container">
+  <div class="above">
+    <div class="headline">
+      <h1><%= p.title %></h1>
+      <p><%= p.body %></p>
+    </div>
+    <div class="content">
+      <div class="product-hero large">
+        <%= image_tag p.image %>
+      </div>
+      <div class="purchase small">
+        <div class="buy-box">
+          <div class="price">
+            $<%=  p.price %>
+          </div>
+          <div class="description">
+            <p>
+              <%= p.description %>
+            </p>
+          <div class="pay">
+            <%= link_to 'Buy', p.buy, target: '_blank' %>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="below">
+    <div class="primary large">
+      <div class="benefits">
+      <% p.benefits.each do |b| %>
+        <div class="benefit">
+          <h2>
+            <%= b.title %>
+          </h2>
+          <p>
+            <%= b.body %>
+          </p>
+        </div>
+      <% end %>
+      </div>
+    </div>
+    <div class="secondary small">
+      <h2>Your content is king</h2>
+      <p>
+        Let your content drive site development, not some flashy template.
+        Only add extra structure when you need it.
+      </p>
+      <div class="products">
+        <% data.products.each do |p| %>
+          <% link_to p.url do %>
+            <div class="product">
+              <div class="icon">
+                <%= image_tag p.img %>
+              </div>
+              <div class="content">
+                <h2>
+                  <%= p.title %>
+                </h2>
+                <p>
+                  <%= p.body %>
+                </p>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="third">
+    <div class="faqs large">
+      <% data.faqs.each do |p| %>
+        <div class="question">
+          <h2>
+            <%= p.title %>
+          </h2>
+          <p>
+            <%= p.body %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+    <div class="contact small">
+      <h1>Contact form goes here.</h1>
+    </div>
+  </div>
+</div>

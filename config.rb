@@ -10,6 +10,12 @@ set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
 set :layout, 'layouts/application'
 
+[
+  "splash-page"
+].each do |name|
+  proxy "/products/#{name}.html", "/templates/product.html", :locals => { :product => name }, :ignore => true
+end
+
 configure :development do
  activate :livereload
 end

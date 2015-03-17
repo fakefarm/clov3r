@@ -1,0 +1,28 @@
+-
+  title: '+ Page'
+  body: 'Need more pages?'
+  img: 'abreeze.jpg'
+  tag: 'product'
+  price: '$40'
+  url: 'splash-page'
+-
+  title: 'Ebook'
+  body: 'Content laid out as a book'
+  img: 'abreeze.jpg'
+  tag: 'product'
+  price: '$40'
+  url: 'splash-page'
+-
+  title: 'Blog'
+  body: 'Content is king'
+  img: 'abreeze.jpg'
+  tag: 'product'
+  price: '$40'
+  url: 'splash-page'
+-
+  title: 'Pro-Profile'
+  body: 'Stop marketing social networks'
+  img: 'abreeze.jpg'
+  tag: 'product'
+  price: '$40'
+  url: 'splash-page'
