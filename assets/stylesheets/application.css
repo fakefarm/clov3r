@@ -2067,6 +2067,18 @@ html {
   .primary, .secondary {
     padding-top: 2em; } }
 
+/* line 110, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.more-info {
+  display: none; }
+
+/* line 114, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.more-button {
+  color: #477dca; }
+
+/* line 118, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.more-button:hover + .more-info {
+  display: block; }
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
