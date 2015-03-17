@@ -1931,6 +1931,142 @@ html {
       padding: 4em;
       margin: 4em; } }
 
+/* line 1, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.content, .below, .third, .product {
+  display: block; }
+  /* line 9, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/bourbon-4.1.1/app/assets/stylesheets/addons/_clearfix.scss */
+  .content::after, .below::after, .third::after, .product::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+@media screen and (min-width: 40em) {
+  /* line 3, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  .large {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    padding-right: 1.8em;
+    border-right: 1px solid #ddd; }
+    /* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+    .large:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 40em) {
+  /* line 10, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  .small {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    /* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+    .small:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 40em) {
+  /* line 16, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  h2 {
+    font-size: 2em;
+    padding: 0;
+    margin: 0.5em 0 0 0; } }
+
+/* line 25, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.headline h1 {
+  text-align: center;
+  font-size: 2em;
+  padding: 0; }
+  @media screen and (min-width: 40em) {
+    /* line 25, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+    .headline h1 {
+      margin: 0 0 -10px 0;
+      font-size: 5em; } }
+/* line 34, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.headline p {
+  text-align: center;
+  font-size: 1em; }
+  @media screen and (min-width: 40em) {
+    /* line 34, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+    .headline p {
+      font-size: 1.25em; } }
+
+/* line 43, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.purchase {
+  background: #ddd;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 1em; }
+  @media screen and (min-width: 40em) {
+    /* line 43, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+    .purchase {
+      margin-top: 4em;
+      padding: 1em; } }
+
+/* line 54, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.buy-box {
+  text-align: center; }
+
+@media screen and (min-width: 40em) {
+  /* line 58, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  .price {
+    font-size: 3em; } }
+
+@media screen and (min-width: 40em) {
+  /* line 64, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  .pay {
+    background: #63db8e; } }
+/* line 70, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.pay a {
+  display: block;
+  color: white;
+  font-size: 1.3em;
+  padding: 1em;
+  background: #63db8e; }
+  @media screen and (min-width: 40em) {
+    /* line 70, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+    .pay a {
+      padding: 0.25em 0;
+      font-size: 3em; } }
+  /* line 80, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  .pay a:hover {
+    background: red; }
+
+/* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.product:hover {
+  background: #ddd; }
+@media screen and (min-width: 40em) {
+  /* line 86, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  .product {
+    padding: 1em 1em 1em 0; } }
+@media screen and (min-width: 40em) {
+  /* line 91, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  .product .icon {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    /* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+    .product .icon:last-child {
+      margin-right: 0; } }
+/* line 96, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+.product .content {
+  color: #333; }
+  @media screen and (min-width: 40em) {
+    /* line 96, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+    .product .content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      /* line 87, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/.bundle/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+      .product .content:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 40em) {
+  /* line 104, /Users/davidwoodall/Dropbox/300_code/projects/clov3r/source/assets/stylesheets/pages/_products.scss */
+  .primary, .secondary {
+    padding-top: 2em; } }
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
