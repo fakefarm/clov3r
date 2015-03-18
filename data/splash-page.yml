@@ -14,8 +14,10 @@ benefits:
       <li>Design</li>
     </ul>'
   -
-    title: 'where'
-    body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    title: 'Next Step'
+    body: 'Payment is due up front in order to start.'
   -
-    title: 'why'
-    body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    title: 'the Clov3r way'
+    body: "When you get a CMS site like wordPress
+    or SquareSpace, you then have to manage adding the content. THat's like paying money to have a
+    new job. When you pay clov3r, we do the work for you. The difference is when you pay us, we do the work."
