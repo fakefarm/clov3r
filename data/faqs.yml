@@ -1,8 +1,4 @@
 -
-  title: 'Why use clov3r?'
-  body: 'Clov3r is the way to go!'
-  tag: 'product'
--
   title: 'What about changes?'
   body: 'this is cool to that you will like'
   tag: 'product'
@@ -11,6 +7,34 @@
   body: 'this is cool to that you will like'
   tag: 'product'
 -
-  title: 'What should I do when I get tired?'
-  body: 'this is cool to that you will like'
+  title: "What's the next step?"
+  body: "The next step is to shoot me an email that you need a website. Then, I'll need the content you're interested in posting. Feel free to provide that here."
+  tag: 'product'
+-
+  title: "How much does it cost?"
+  body: "clov3r sites are iterative. They can ship quickly because they are small and modular. A splash page is $295 and that might be all you need. There are no monthly reocurring fees."
+  tag: 'product'
+-
+  title: "Why not WordPress?"
+  body: "Sites like WordPress and SquareSpace (AKA 'CMS Sites') are great if they meet your needs. But they can also be too big. CMS are great for larger projects that have a lot of activity but a little heavy handed for simple splash pages with some static content. Also, a basic WordPress project is going to start around $1,000 so I can get you a good looking site for much cheaper."
+  tag: 'product'
+-
+  title: "How long does this take?"
+  body: "Usually 4 - 7 days after I receive content will I have your site up for review."
+  tag: 'product'
+-
+  title: "Why clov3r?"
+  body: "clov3r is for people who want to do as little as possible on the 'web' side of things. Think of it as a web design and development agency of one who also goes by 'Dave'"
+  tag: 'product'
+-
+  title: "What about revisions?"
+  body: "Each of the items on the price list describe the kind of revisions that are free vs. paid. The biggest difference is the amount of time it will take to make the revision. If it's something small, I'm happy to do it at no charge. If it's big, I'll either point you to something on the price list or it will give you a proposal that will be based on my hourly rate. Just let me know what you want and I'll let you know."
+  tag: 'product'
+-
+  title: "What if I want to make changes?"
+  body: "well, it depends on what kind of changes you mean. I've tried to list out the most common changes people ask. but, if it's not on my list let's talk. trade some emails. I do offer custom work at my hourly rate of $75."
+  tag: 'product'
+-
+  title: "What's in that Spinach shake?"
+  body: "I've been drinking a protein spinach shake for 8 years. I first learned of it from Joe Dillon's 7 Natural laws. I've been asked that enough times now that I'm going to make a short video or blog post showing all the ingredients."
   tag: 'product'
