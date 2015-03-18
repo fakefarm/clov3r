@@ -1,7 +1,9 @@
-title: "Make a Splash!"
+title: "Splash page"
 body: "Capture attention with a clean, simple, and mobile friendly page."
+icon: 'whale2.gif'
 image: 'abreeze.jpg'
-price: 295
+strike: 395
+price: 1
 description: "Flat, one time fee. No monthly costs."
 buy: 'https://gumroad.com/l/GsQV'
 
