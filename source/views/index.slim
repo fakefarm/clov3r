@@ -2,42 +2,7 @@
 title: clov3r.com | <3 your site
 ---
 
-header.centered-navigation role="banner"
-  .centered-navigation-wrapper
-    a.mobile-logo href="javascript:void(0)"
-      img alt=("Logo image") src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" /
-    a#js-centered-navigation-mobile-menu.centered-navigation-mobile-menu href="javascript:void(0)"  MENU
-    nav role="navigation"
-      ul#js-centered-navigation-menu.centered-navigation-menu.show
-        li.nav-link
-          a href="#about"  About
-        li.nav-link
-          a href="#examples" Examples
-        li.nav-link
-          a href="#dave"  Meet Dave
-        / li.nav-link.logo
-        /   a.logo href="javascript:void(0)"
-        /     img alt=("Logo image") src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" /
-        li.nav-link
-          a href="#price-list"  Price List
-        li.nav-link
-        li.nav-link.more
-          a href="#menu"  Products
-          ul.submenu
-            li
-              a href="/products/splash-page"  Splash Page
-            li
-              a href="javascript:void(0)"  Blog
-            li.more
-              a href="javascript:void(0)"  Services
-              ul.submenu
-                li
-                  a href="javascript:void(0)"  Domain Setup
-                li
-                  a href="javascript:void(0)"  Another Item
-        li.nav-link
-          a href="#get-started"  Get Started
-
+= render_partial 'shared/nav'
 
 .hero
   .hero-inner
@@ -66,22 +31,22 @@ header.centered-navigation role="banner"
       .bullet-content
         h2 Stays Fresh
         p Un-kept sites look like a Christmas tree in February. clov3r sites stay fresh because they grow with your content.
-  ul.bullets
     li.bullet.three-col-bullet
       .bullet-image= image_tag 'mobile.jpg'
       .bullet-content
         h2 Works Across Screens
         p clov3r sites are designed and tested to look great on all tablets, laptops, and mobile devices.
-    li.bullet.three-col-bullet
-      .bullet-image= image_tag 'mobile.jpg'
-      .bullet-content
-        h2 Dave is your man.
-        p "Dave is a designer and developer who can handle the technical mumbo jumbo for you"
-    li.bullet.three-col-bullet
-      .bullet-image= image_tag 'dashboard.jpg'
-      .bullet-content
-        h2 No Monthly fees.
-        p "Dave is a designer and developer who can handle the technical mumbo jumbo for you"
+  / ul.bullets
+  /   li.bullet.three-col-bullet
+  /     .bullet-image= image_tag 'mobile.jpg'
+  /     .bullet-content
+  /       h2 Dave is your man.
+  /       p "Dave is a designer and developer who can handle the technical mumbo jumbo for you"
+  /   li.bullet.three-col-bullet
+  /     .bullet-image= image_tag 'dashboard.jpg'
+  /     .bullet-content
+  /       h2 No Monthly fees.
+  /       p "Dave is a designer and developer who can handle the technical mumbo jumbo for you"
 
 #examples
 .l-container
@@ -95,7 +60,6 @@ header.centered-navigation role="banner"
       a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tabc"  Peterson Masonry (Small Business)
       a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tabd"  Cat Math Do (Boardgame)
       a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tabe"  Feather (Small business)
-      a.js-vertical-tab.vertical-tab href="javascript:void(0)" rel="tabf"  Your Site
     .vertical-tab-content-container
       a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading.is-active href="" rel="taba"  "Abreeze Accounting"
       #taba.js-vertical-tab-content.vertical-tab-content
@@ -146,7 +110,7 @@ header.centered-navigation role="banner"
       | Let's build only what you need.
   ul.bullets
     li.bullet.three-col-bullet
-      .bullet-image= image_tag 'whale.gif'
+      .bullet-image= image_tag 'whale2.gif'
       .bullet-content
         h2 Splash Page
         p This is square one. A single page to show who you are and some other information like a bio, services, and contact details.
@@ -178,6 +142,62 @@ header.centered-navigation role="banner"
         h2 Flare
         p Flare are the additional items that make your site more personable. These features should only be added when needed.
 
+/ #price-list
+/ .l-container
+/   .banner.l-banner
+/     = image_tag 'pizza.gif'
+/     h1 mmm... price list
+/     p No monthly fees. Payment is flat, up front.
+/   .grid-items-lines
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'splash.png'
+/       h1 Splash Page
+/       h2 $395
+/       p view details
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'blog.png'
+/       h1 Basic blog
+/       h2 $395
+/       p view details
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'gallery.png'
+/       h1 Photo gallery
+/       h2 $350
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'email.png'
+/       h1 Email setup
+/       h2 $250
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'domain.png'
+/       h1 Domain Setup
+/       h2 $99
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'flair.png'
+/       h1 Blog tags
+/       h2 $295
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'flair.png'
+/       h1 Advertising section
+/       h2 $295
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'flair.png'
+/       h1 Contact form
+/       h2 $295
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'flair.png'
+/       h1 Blog Commenting
+/       h2 $295
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'flair.png'
+/       h1 Social Sharing
+/       h2 $295
+/     a.grid-item href="/products/splash-page"
+/       = image_tag 'clock.png'
+/       h1 Hourly rate
+/       h2 $75
+/     .right-cover
+/     .bottom-cover
+
 #dave
 .l-container
   .banner.l-banner
@@ -191,115 +211,11 @@ header.centered-navigation role="banner"
           | Thanks for stopping by! I design, develop, and manage websites for people who don't want to mess with the minutia. I love to code and think of it as speaking a foreign language. I am happy to make your life easier by taking care of all the web things so you can stick to creating awesome logos, photos, and life changing posts. <a href="#get-started">Let's talk!</a>
         .signature= image_tag 'signature.png'
 
-#price-list
-.l-container
-  .banner.l-banner
-    = image_tag 'pizza.gif'
-    h1 mmm... price list
-    p No monthly fees. Payment is flat, up front.
-  .grid-items-lines
-    a.grid-item href="/products/splash-page"
-      = image_tag 'splash.png'
-      h1 Splash Page
-      h2 $395
-      p view details
-    a.grid-item href="/products/splash-page"
-      = image_tag 'blog.png'
-      h1 Basic blog
-      h2 $395
-      p view details
-    a.grid-item href="/products/splash-page"
-      = image_tag 'gallery.png'
-      h1 Photo gallery
-      h2 $350
-    a.grid-item href="/products/splash-page"
-      = image_tag 'email.png'
-      h1 Email setup
-      h2 $250
-    a.grid-item href="/products/splash-page"
-      = image_tag 'domain.png'
-      h1 Domain Setup
-      h2 $99
-    a.grid-item href="/products/splash-page"
-      = image_tag 'flair.png'
-      h1 Blog tags
-      h2 $295
-    a.grid-item href="/products/splash-page"
-      = image_tag 'flair.png'
-      h1 Advertising section
-      h2 $295
-    a.grid-item href="/products/splash-page"
-      = image_tag 'flair.png'
-      h1 Contact form
-      h2 $295
-    a.grid-item href="/products/splash-page"
-      = image_tag 'flair.png'
-      h1 Blog Commenting
-      h2 $295
-    a.grid-item href="/products/splash-page"
-      = image_tag 'flair.png'
-      h1 Social Sharing
-      h2 $295
-    a.grid-item href="/products/splash-page"
-      = image_tag 'clock.png'
-      h1 Hourly rate
-      h2 $75
-    .right-cover
-    .bottom-cover
-
 #get-started
 .l-container
   .banner.l-banner.action-border
-    h1 Ready to get started?
-    p First step, like all of them, is to shoot Dave an email <3
-    .button= mail_to "dave@woodalls.me", "Email Dave", subject: "I need a website"
+    h1 Ready for a Splash Page?
+    p First step is to get a splash page
+    .button= link_to 'Buy Splash Page', '/products/splash-page'
 
-footer.footer role="contentinfo"
-
-  h1
-    span.logo <3
-    | your site
-
-  .footer-links
-    ul
-      li
-        h3 clov3r
-      li
-        a href="#about"  About
-      li
-        a href="#examples"  Examples
-      li
-        a href="#menu"  menu
-      li
-        a href="#dave"  meet dave
-      li
-        a href="#price-list"  price list
-      li
-        a href="#faqs"  FAQs
-      li
-        a href="#get-started"  get started
-    ul
-      li
-        h3 follow Dave
-      li= link_to 'http://www.wwwoodall.com', target: '_blank' do
-        .fa.fa-rocket
-        '
-        span wwwoodall
-      li= link_to 'http://www.twitter.com/wwwoodall', target: '_blank' do
-        .fa.fa-twitter
-        '
-        span twitter
-      li= link_to 'http://www.github.com/woodall', target: '_blank' do
-        .fa.fa-github
-        '
-        span github
-      li= link_to 'http://www.dribbble.com/wwwoodall', target: '_blank' do
-        .fa.fa-dribbble
-        '
-        span dribbble
-      li= link_to 'http://www.linkedin.com/in/davewoodall/en', target: '_blank' do
-        .fa.fa-linkedin
-        '
-        span linkedin
-  hr
-  p photos from <a href="https://unsplash.com/" target="_blank">unsplash</a>
+= render_partial 'shared/footer'

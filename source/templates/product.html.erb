@@ -1,10 +1,14 @@
+<%= render_partial 'shared/nav' %>
 <% p = data.send(product) %>
 
 <div class="l-container">
   <div class="above">
     <div class="headline">
-      <h1><%= p.title %></h1>
-      <p><%= p.body %></p>
+      <%= image_tag p.icon, class: 'icon' %>
+      <div class="copy">
+        <h1><%= p.title %></h1>
+        <p><%= p.body %></p>
+      </div>
     </div>
     <div class="content">
       <div class="product-hero large">
@@ -12,7 +16,16 @@
       </div>
       <div class="purchase small">
         <div class="buy-box">
+          <div class="strike">
+            <p>
+              Normally
+            </p>
+            $<%=  p.strike %>
+          </div>
           <div class="price">
+            <p>
+              On Sale
+            </p>
             $<%=  p.price %>
           </div>
           <div class="description">
@@ -49,31 +62,31 @@
         With clov3r, you only add extra <i>site stuff</i> when you need it.
       </p>
       <div class="products">
-        <% data.products.each do |p| %>
-          <% link_to p.url do %>
+        <%# data.products.each do |p| %>
+          <%# link_to p.url do %>
             <div class="product">
               <div class="icon">
-                <%= image_tag p.img %>
+                <%#= image_tag p.img %>
               </div>
               <div class="content">
                 <h2>
-                  <%= p.title %>
+                  <%#= p.title %>
                 </h2>
                 <div class="more-button">
-                  quick view
+                  <!-- quick view -->
                 </div>
                 <div class="more-info">
                   <p>
-                    <%= p.price %>
+                    <%#= p.price %>
                   </p>
                   <p>
-                    <%= p.body %>
+                    <%#= p.body %>
                   </p>
                 </div>
               </div>
             </div>
-          <% end %>
-        <% end %>
+          <%# end %>
+        <%# end %>
       </div>
     </div>
   </div>
@@ -102,3 +115,5 @@
     </div>
   </div>
 </div>
+
+<%= render_partial 'shared/footer' %>
