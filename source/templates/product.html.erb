@@ -20,19 +20,23 @@
             <p>
               Normally
             </p>
-            $<%=  p.strike %>
+            <p>
+              $<%=  p.strike %>
+            </p>
           </div>
           <div class="price">
             <p>
               On Sale
             </p>
-            $<%=  p.price %>
+            <p>
+              $<%=  p.price %>
+            </p>
           </div>
           <div class="description">
             <p>
               <%= p.description %>
             </p>
-          <div class="pay">
+          <div class="pay button">
             <%= link_to 'Buy', p.buy, target: '_blank' %>
           </div>
           </div>
@@ -56,11 +60,11 @@
       </div>
     </div>
     <div class="secondary small">
-      <h2>Your content is king</h2>
+<!--       <h2>Your content is king</h2>
       <p>
         Your content should drive site development, not some flashy template.
         With clov3r, you only add extra <i>site stuff</i> when you need it.
-      </p>
+      </p> -->
       <div class="products">
         <%# data.products.each do |p| %>
           <%# link_to p.url do %>
@@ -92,19 +96,9 @@
   </div>
   <div class="third">
     <div class="faqs large">
-      <% data.faqs.each do |p| %>
-        <div class="question">
-          <h2>
-            <%= p.title %>
-          </h2>
-          <p>
-            <%= p.body %>
-          </p>
-        </div>
-      <% end %>
     </div>
     <div class="contact small">
-      <h1>Have Questions? Shoot Dave an email</h1>
+      <h2>Question? Shoot Dave an email</h2>
       <form accept-charset="UTF-8" action="https://formkeep.com/f/f1cc3e6b1728" method="POST">
         <input type="hidden" name="utf8" value="✓">
         <input type="text" name="name" placeholder="Name">

@@ -1,25 +1,19 @@
-title: "Splash page"
+title: "Splash Page"
 body: "Capture attention with a clean, simple, and mobile friendly page."
 icon: 'whale2.gif'
 image: 'abreeze.jpg'
 strike: 395
-price: 1
+price: 95
 description: "Flat, one time fee. No monthly costs."
 buy: 'https://gumroad.com/l/GsQV'
 
 benefits:
   -
+    title: 'the Clov3r way'
+    body: "When your website is a CMS site like wordPress or SquareSpace, you then have to manage adding the content. That's like paying money to have a new job. When you pay clov3r, we do the work for you. The difference is when you pay us, we do the work."
+  -
     title: "What's included"
-    body: 'Splash pages are all of your primary content on a single page.<br><ul>
-      <li>Hero image</li>
-      <li>Layout</li>
-      <li>Design</li>
-    </ul>'
+    body: 'Splash pages are all of your primary content on a single page.'
   -
     title: 'Next Step'
     body: 'Payment is due up front in order to start.'
-  -
-    title: 'the Clov3r way'
-    body: "When you get a CMS site like wordPress
-    or SquareSpace, you then have to manage adding the content. THat's like paying money to have a
-    new job. When you pay clov3r, we do the work for you. The difference is when you pay us, we do the work."
