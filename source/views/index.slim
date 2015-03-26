@@ -15,6 +15,7 @@ title: clov3r.com | <3 your site
         br
         | and let clov3r put it online for you.
 
+
 #about
 .about.l-container
   .banner.l-banner
@@ -48,11 +49,25 @@ title: clov3r.com | <3 your site
   /       h2 No Monthly fees.
   /       p "Dave is a designer and developer who can handle the technical mumbo jumbo for you"
 
+#dave
+.l-container
+  .banner.l-banner
+    .side-image
+      .images-wrapper-dave
+      .side-image-content
+        h1 Meet Dave
+        h2
+          | The guy behind clov3r.
+        p.dave-bio
+          | Howdy! Need a website but don't want to deal with the details? That's what I'm here for. I design, develop, and manage websites for people who don't want to mess with the minutia. I'll make your life easier by taking care of the web things so you can stick to creating awesome logos, photos, blog posts, pizza, doohickies, widgets, or whatever you do exactly.
+        .signature= image_tag 'signature.png'
+
+
 #examples
 .l-container
   .banner.l-banner
     h1 Examples
-    p Sharing the <3
+    p Here are some websites I've designed, coded, and manage. When the client needs something changed, they just email me. No messing with a dashboard or technical jargon. It's nice and easy.
   .vertical-tabs-container
     .vertical-tabs.portfolio
       a.js-vertical-tab.vertical-tab.is-active href="javascript:void(0)" rel="taba"  Abreeze Accounting (Small business)
@@ -98,23 +113,22 @@ title: clov3r.com | <3 your site
           .button= link_to 'visit site', 'http://www.feather.cards', target: '_blank'
 
 
+
 #menu
 .site-options.l-container
   .banner.l-banner
-    h1 Just Right Sites
+    h1 websites only as big as you need
     p
-      | Cluttered sites drown content. clov3r is Agile by building only the amount of site you need.
+      | Bloated sites drown content. The clov3r way is to think of your site as 'modules' that are added if necessary.
       br
-      | Agile prevents spending time and money on features you never use.
-      br
-      | Let's build only what you need.
+      | This is also known as the 'Agile process' which prevents spending time and money on features you never use.
   ul.bullets
     li.bullet.three-col-bullet
       .bullet-image= image_tag 'whale2.gif'
       .bullet-content
         h2 Splash Page
         p This is square one. A single page to show who you are and some other information like a bio, services, and contact details.
-        p= link_to 'view details', '/products/splash-page'
+        .button.skinny= link_to 'view details', '/products/splash-page'
     li.bullet.three-col-bullet
       .bullet-image= image_tag 'page.gif'
       .bullet-content
@@ -198,24 +212,13 @@ title: clov3r.com | <3 your site
 /     .right-cover
 /     .bottom-cover
 
-#dave
-.l-container
-  .banner.l-banner
-    .side-image
-      .images-wrapper-dave
-      .side-image-content
-        h1 Meet Dave
-        h2
-          | Helping you drink your spinach
-        p.dave-bio
-          | Thanks for stopping by! I design, develop, and manage websites for people who don't want to mess with the minutia. I love to code and think of it as speaking a foreign language. I am happy to make your life easier by taking care of all the web things so you can stick to creating awesome logos, photos, and life changing posts. <a href="#get-started">Let's talk!</a>
-        .signature= image_tag 'signature.png'
+
 
 #get-started
 .l-container
   .banner.l-banner.action-border
-    h1 Ready for a Splash Page?
-    p First step is to get a splash page
-    .button= link_to 'Buy Splash Page', '/products/splash-page'
+    h1 Need a site?
+    p The first step is to click the button.
+    .button= link_to 'Start', '/products/splash-page'
 
 = render_partial 'shared/footer'
