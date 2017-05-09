@@ -10,14 +10,21 @@
    will I need to adjust letter spacing per mq?
  */
 
-.h1-serif-sl {
-  font-family: "Georgia";
-  display: inline;
-  margin: 0;
-  letter-spacing: -3px;
+
+.garment-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--gray);
 }
 
+.garment-header th {
+  background: var(--gray);
+  color: var(--white);
+  padding: calc(var(--space-3) * 1em);
+}
 
-.sl-black {
- color: black !important;
+.garment-table td {
+    text-align: center;
+    padding: calc(var(--space-3) * 1em);
+    border: 1px solid var(--gray);
 }

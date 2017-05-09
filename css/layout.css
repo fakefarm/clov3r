@@ -70,3 +70,56 @@
     padding: calc(var(--space-root) * var(--space-8));
   }
 }
+
+
+
+.l-section {
+  overflow: auto;
+  padding: calc(var(--space-3) * 1em)
+           calc(var(--space-6) * 1em);
+}
+
+.l-col {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media only screen and (min-width: 200px) {
+  .l-col {
+
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .l-col {
+
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .l-col {
+
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .l-col {
+    width: 50%;
+    float: left;
+  }
+  .l-col ~ .l-col {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .l-col {
+
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .l-col {
+
+  }
+}
