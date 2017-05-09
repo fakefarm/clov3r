@@ -28,3 +28,65 @@
     padding: calc(var(--space-3) * 1em);
     border: 1px solid var(--gray);
 }
+
+.landing-page {
+  background: var(--yellow);
+  border: 35px solid var(--purple);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.landing-page:hover {
+  transition: all 4s;
+  border: 35px solid var(--red);
+}
+
+.logo {
+  padding: 3em;
+  padding-top: 12em;
+}
+
+.logo-box {
+  transition: all 300ms;
+  background: var(--blue);
+  color: var(--blue);
+  font-size: 3em;
+}
+
+.logo-box:hover {
+  background: var(--seagreen);
+  color: var(--seagreen);
+}
+
+
+.logo-box span {
+  font-family: "helvetica neue", helvetica;
+  font-weight: 200;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 1em;
+  padding: 0.25em;
+  text-align: center;
+}
+
+
+.logo-c, .logo-l, .logo-o, .logo-v, .logo-r {
+  transition: all 300ms;
+  background: white;
+}
+
+.logo-3 {
+  transition: all 300ms;
+  color: white;
+}
+
+.logo-c:hover, .logo-l:hover, .logo-o:hover, .logo-v:hover, .logo-r:hover {
+  background: var(--yellow);
+}
+
+.logo-3:hover {
+  color: var(--yellow);
+}
