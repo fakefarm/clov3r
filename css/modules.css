@@ -2,3 +2,7 @@
   border-top: 1px solid var(--gray);
   margin-bottom: calc(var(--space-20) * 1em);
 }
+
+.m-section:first-child {
+  border: none;
+}

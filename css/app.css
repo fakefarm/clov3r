@@ -90,3 +90,30 @@
 .logo-3:hover {
   color: var(--yellow);
 }
+
+a.download-btn {
+  background: rgb(128, 181, 127);
+  display: inline-block;
+  /* width: 20%; */
+  text-align: center;
+  padding: .5em 1em;
+  color: rgb(47, 136, 42);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+a.download-btn:hover {
+  background: rgb(165, 221, 164);
+}
+
+.order-nav {
+  background: #d7d7d7;
+  background-image: linear-gradient(-90deg, #C3DADF, #D9F5D6);
+  padding: 2em;
+  padding-left: 5em;
+}
+
+.order-nav img {
+  width: 20%;
+}
